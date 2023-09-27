@@ -1,15 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <script type="text/javascript" href="index.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
     <script src="index.js" defer></script>
     <title>Random Quote Generator</title>
 </head>
+
 <body>
-    <button onclick="getQuote()">get quote</button>
-    <p>"the quote"</p>
+    <button onclick="getQuote()">new quote</button>
+    <p id="quote-p">"the quote"</p>
 </body>
+
 </html>
+
+<script>
+    let quotes = ["I can feel depression all around", "This twisted tortured mess"]
+
+    function getQuote() {
+        let randomNumber = Math.floor(Math.random() * quotes.length);
+        document.getElementById("quote-p").innerHTML = quotes[randomNumber]
+    }
+</script>
+
+<!-- https://www.w3schools.com/js/js_htmldom_methods.asp -->
