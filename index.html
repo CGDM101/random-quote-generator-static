@@ -17,7 +17,7 @@
 </html>
 
 <script>
-    let url = 'https://my-api2-z1g8.onrender.com/products'
+    let url = 'https://dm-quotes.onrender.com/'
 
     async function NewQuote() {
         let result = await ReadFromApi()
@@ -25,7 +25,7 @@
         const p = document.getElementById('quote-p')
 
         let randomNumber = Math.floor(Math.random() * result.length);
-        p.innerHTML = `${result[randomNumber].name}`
+        p.innerHTML = `${result[randomNumber].text}`
     }
 
     async function ReadFromApi() {
