@@ -10,19 +10,37 @@
 </head>
 
 <body>
-    <button onclick="getQuote()">new quote</button>
+    <button onclick="NewQuote()">new quote</button>
     <p id="quote-p">"the quote"</p>
 </body>
 
 </html>
 
 <script>
-    let quotes = ["I can feel depression all around", "This twisted tortured mess"]
+    let url = 'https://my-api2-z1g8.onrender.com/products'
 
-    function getQuote() {
-        let randomNumber = Math.floor(Math.random() * quotes.length);
-        document.getElementById("quote-p").innerHTML = quotes[randomNumber]
+    async function NewQuote() {
+        let result = await ReadFromApi()
+
+        const p = document.getElementById('quote-p')
+
+        let randomNumber = Math.floor(Math.random() * result.length);
+        p.innerHTML = `${result[randomNumber].name}`
+    }
+
+    async function ReadFromApi() {
+        const response = await fetch(url, {
+            headers: {
+                'Content-Type': 'application/json',
+                'Access-Control-Allow-Origin': '*'
+            }
+        })
+
+        if (response.ok) {
+            const data = await response.json()
+            return data
+        } else {
+            console.log('http-error: ', response.status);
+        }
     }
 </script>
-
-<!-- https://www.w3schools.com/js/js_htmldom_methods.asp -->
