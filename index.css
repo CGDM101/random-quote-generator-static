@@ -1,0 +1,44 @@
+body {
+    text-align: center;
+}
+
+header {
+    text-transform: uppercase;
+    font-family: fantasy;
+    font-size: xx-large;
+    letter-spacing: 0.10em;
+    color: dodgerblue;
+    text-shadow: 2px 2px 2px lightskyblue;
+    background-color: aliceblue;
+    margin: 0.5em;
+    padding: 1em;
+    border: 1px solid;
+    border-radius: 0.3em;
+}
+
+button:hover {
+    box-shadow: 5px 5px 5px lightskyblue;
+    text-shadow: 2px 2px 2px lightskyblue;
+}
+
+button {
+    background-color: aliceblue;
+    color: dodgerblue;
+    border: 1px solid;
+    border-radius: 0.75em;
+    margin: 2em;
+    padding: 1em;
+    font-size: medium;
+    letter-spacing: 0.15em;
+    word-spacing: 0.25em;
+    text-transform: lowercase;
+}
+
+p {
+    font-style: italic;
+    letter-spacing: 0.05em;
+    word-spacing: 0.25em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: x-large;
+    color: darkslategray;
+}
