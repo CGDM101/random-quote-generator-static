@@ -42,3 +42,14 @@ p {
     font-size: x-large;
     color: darkslategray;
 }
+
+@media screen and (max-width: 480px) {
+    header {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    button {
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+}
