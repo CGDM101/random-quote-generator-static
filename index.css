@@ -16,10 +16,10 @@ header {
     border-radius: 0.3em;
 }
 
-button:hover {
+/* button:hover {
     box-shadow: 5px 5px 5px lightskyblue;
     text-shadow: 2px 2px 2px lightskyblue;
-}
+} */
 
 button {
     background-color: aliceblue;
@@ -47,9 +47,11 @@ p {
     header {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
+}
 
-    button {
-        margin-bottom: 0px;
-        margin-top: 0px;
+@media only screen and (min-width: 992px) {
+    button:hover {
+        box-shadow: 5px 5px 5px lightskyblue;
+        text-shadow: 2px 2px 2px lightskyblue;
     }
 }
