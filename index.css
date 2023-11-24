@@ -41,6 +41,7 @@ p {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: x-large;
     color: darkslategray;
+    margin: 16px;
 }
 
 @media screen and (max-width: 480px) {
