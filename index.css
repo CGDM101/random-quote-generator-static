@@ -34,10 +34,6 @@ button {
     text-transform: lowercase;
 }
 
-.p-container {
-    padding: 1em;    
-}
-
 p {
     font-style: italic;
     letter-spacing: 0.05em;
@@ -50,6 +46,10 @@ p {
 @media screen and (max-width: 480px) {
     header {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .p-container {
+        padding: 1em;    
     }
 }
 
